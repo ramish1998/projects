@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ARRAY</title>
+
+    <style>
+        body{
+            font-size: 2em;
+            background-color: teal;
+            color: #fff;
+            text-align: center;
+        }
+        b{
+            font-size: 2.2em;
+        }
+    </style>
+
+    <script>
+        var a = prompt("Enter Your Name");
+        var b = prompt("Enter Your City");
+        var c = prompt("Enter Your Hobby");
+        var names = [a , b , c];
+
+        if(a !== "" && b !== "" && c !== ""){
+            document.write("Welcome, Mr. <b>" + names[0] + "</b>. We are happy you are from <b>" + names[1] + "</b>. <br> Your hobby is <b>" + names[2]);
+        }
+        else{
+            alert("Please Fill All The Fields");
+            location.reload();
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
