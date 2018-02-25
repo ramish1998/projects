@@ -3,6 +3,122 @@
 	 <meta charset="UTF-8">
 	 
 	 <script>
+
+// CHAP 8-11***********************************************
+
+// 1. Write a program that takes input a name from user & greet the user like this: 
+// var name = prompt("Enter Name");
+// alert("Hi! " + name);
+
+
+
+
+// 2.  Write a program to take input a number from user & display it’s multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default. 
+
+// var num = +prompt("Enter table number");
+// for (var i = 1 ; i <= 10;  i++) {
+// 	document.write(num + " x " + i + " = " + num*i + "<br>");
+// }
+
+
+
+
+// 3. Write a program to take “city” name as input from user. If user enters “Karachi”, welcome the user like this: “Welcome to city of lights” 
+
+// var city = prompt("Enter City");
+// city = city.toLowerCase();
+// if (city === "karachi") {
+// 	alert("Welcome to the City of Lights");
+// }
+
+
+
+
+// 4.  Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am.  
+
+// var gender = prompt("Enter your gender");
+// gender = gender.toLowerCase();
+// if (gender === "male") {
+// 	alert("Hi Sir!");
+// }
+// else{
+// 	alert("Hi Ma'am");
+// }
+
+
+
+
+
+// 5. Write a program to take input color of road traffic signal from the user & show the message according to this table: 
+// var clr = prompt("Enter traffic lights color");
+// clr = clr.toLowerCase();
+// if (clr === "red") {
+// 	alert("vehicles must stop");
+// }
+// else if( clr === "yellow" ){
+// 	alert("vehicles should get ready to move");
+// }
+// else{
+// 	alert("vehicles should get ready to move");
+// }
+
+
+
+
+// 6.  Write a program to take input max age & current age from user. If the current age is less than or equal to max age, show
+// var mxage = +prompt("Enter max age");
+// var crage = +prompt("Enter current age");
+// if (crage <= mxage ) {
+// 	alert("You are Welcome!");
+// }
+// else{
+// 	alert("Sorry!");	
+// }
+
+
+
+
+// 7. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is less than 0.25litres, show the message “Please refill the fuel in your car
+
+// var fuel = +prompt("Enter remaining fuel in liters");
+// if (fuel <= 0.25) {
+// 	alert("Please refill your car");
+// }
+
+
+
+
+
+// 9. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:
+
+var obmrks = +prompt("Enter obtained marks");
+var ttlmrks = +prompt("Enter total marks");
+var per = (obmrks/ttlmrks)*100;
+per = per.toFixed(2);
+var grd;
+var rem;
+if (per >= 80) {
+	grd = "A-One";
+	rem = "Excellent";
+}
+else if(per >= 70){
+	grd = "A";
+	rem = "Good";
+}
+else if(per >= 60){
+	grd = "B";
+	rem = "You need to improve";
+}
+else{
+	grd = "Fail";
+	rem = "Sorry";
+}
+document.write("<h1>Marks Sheet</h1><h3>Total Marks: " + ttlmrks + "</h3><h3>Marks Obtained: " + obmrks + "</h3><h3>Percentage: " + per + "</h3><h3>Grade:" + grd + "</h3><h3>Remarks: " + rem + "</h3>");
+
+
+
+
+
 	 // task 1
 // 	 var num = +prompt("Enter number to check id its divisible by 3");
 //	 if( num%3 === 0) {
@@ -65,10 +181,6 @@
 
 // 	task 7
 
-
-
-
-
 // task 8
 // var otr = +prompt("Enter 1 for Addition\nEnter 2 for Subtration\nEnter 3 for Multiplication\nEnter 4 for Division");
 // if(otr === 1){
@@ -119,6 +231,8 @@
 
 
 
+
+
 // task 10
 // var year = +prompt("Enter Year");
 // if(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)){
@@ -127,6 +241,7 @@
 // else{
 // 	alert("Its not a leap year");
 // }
+
 
 
 
@@ -160,6 +275,7 @@
 
 
 
+
 // task 13
 // var greeting;
 // var hour = 13;
@@ -170,6 +286,9 @@
 // 	greeting = "Good evening";
 // }
 // alert(greeting);
+
+
+
 
 
 
@@ -194,6 +313,8 @@
 
 
 
+
+
 // task 15
 // var nm = +prompt("Enter number");
 // if(nm < 0){
@@ -209,6 +330,7 @@
 
 
 
+
 // task 16
 // var nm = 12;
 // var tp = typeof(nm); 
@@ -218,6 +340,7 @@
 // else{
 // 	alert("Its String");
 // }
+
 
 
 
@@ -242,11 +365,6 @@
 // else{
 // 	alert("False");
 // }
-
-
-
-
-
 	 
 </script>
 </head>
